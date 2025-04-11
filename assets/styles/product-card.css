@@ -343,6 +343,7 @@ body {
   height: 32px;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 .black {
   background-color: #000;
@@ -364,28 +365,47 @@ body {
 .info-items {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  max-width: 400px;
+  gap: 8px;
+  max-width: 500px;
+  font-family: Arial, sans-serif;
 }
+
 .info-item {
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
-  gap: 30px;
+  display: block;
+  position: relative;
+  clear: both;
 }
+
 .info-item-type {
   font-size: 18px;
   color: #606060;
-  white-space: nowrap;
-  text-align: left;
+  float: left;
+  padding-right: 0.4em;
+  position: relative;
+  background: white; /* Защита от перекрытия точками */
+  z-index: 2;
 }
+
 .info-item-object {
   font-size: 20px;
-  text-align: left;
-  max-width: 90px;
-  width: 100%;
   color: #383131;
-  white-space: nowrap;
+  float: right;
+  padding-left: 20px;
+  background: white; /* Защита от перекрытия точками */
+  position: relative;
+  text-align: left;
+  z-index: 2;
+  width: 100px;
+}
+
+.info-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  border-bottom: 2px dotted #ccc;
+  z-index: 1;
 }
 .buy-btn {
   background-color: var(--orange-font-color);

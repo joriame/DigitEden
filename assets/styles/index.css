@@ -1158,7 +1158,7 @@ body {
   }
 }
 
-/* Отключение hover-эффектов на тач-устройствах */
+
 @media (hover: none) and (pointer: coarse) {
   .menu-link:hover,
   .fast-link:hover,
@@ -1177,7 +1177,6 @@ body {
     fill: inherit !important;
   }
   
-  /* Отключение анимаций */
   .menu-link,
   .fast-link,
   .contacts-link,

@@ -447,7 +447,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .product-card {
-    max-width: 100%; /* На маленьких экранах 1 карточка */
+    max-width: 100%;
   }
   .products-body-head {
     font-size: 36px;
@@ -728,7 +728,6 @@ body {
   }
 }
 
-/* Отключение hover-эффектов на тач-устройствах */
 @media (hover: none) and (pointer: coarse) {
   .menu-link:hover,
   .fast-link:hover,
