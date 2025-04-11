@@ -189,7 +189,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 }
 
 .slider-container {
@@ -205,9 +205,10 @@ body {
 .slider-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  gap: 30px;
+  gap: 50px;
+  max-height: 420px;
 }
 
 .slider-text-block {
@@ -235,8 +236,6 @@ body {
 }
 
 .slider-img {
-  width: 400px;
-  height: 400px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -707,6 +706,10 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.sales-card:hover{
+  transform: scale(1.03);
 }
 
 .new-product {
@@ -941,6 +944,10 @@ body {
 .fast-link {
   color: #b1b1b1;
   font-size: 28px;
+  transition: .3s ease;
+}
+.fast-link:hover, .contacts-link:hover{
+  color: var(--font-color);
 }
 .footer-logo-block {
   width: max-content;
@@ -980,6 +987,7 @@ body {
 .contacts-link {
   color: #b1b1b1;
   font-size: 28px;
+  transition: .3s ease;
 }
 .social-links {
   display: flex;
@@ -1147,5 +1155,40 @@ body {
   }
   .number-link {
     font-size: 20px;
+  }
+}
+
+/* Отключение hover-эффектов на тач-устройствах */
+@media (hover: none) and (pointer: coarse) {
+  .menu-link:hover,
+  .fast-link:hover,
+  .contacts-link:hover,
+  .product-card:hover,
+  .card-img:hover,
+  .card:hover,
+  .sales-card:hover,
+  .slider-arrows:hover,
+  .stories-container img:hover,
+  .cart-btn:hover .cart-color,
+  .product-type-block:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    color: inherit !important;
+    fill: inherit !important;
+  }
+  
+  /* Отключение анимаций */
+  .menu-link,
+  .fast-link,
+  .contacts-link,
+  .product-card,
+  .card-img,
+  .card,
+  .sales-card,
+  .slider-arrows,
+  .stories-container img,
+  .cart-btn,
+  .product-type-block {
+    transition: none !important;
   }
 }

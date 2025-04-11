@@ -59,6 +59,7 @@ body {
   flex-direction: column;
 }
 .header-tel-location-block {
+  max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -304,6 +305,9 @@ body {
   gap: 10px;
   margin-bottom: 10px;
 }
+.stars{
+  cursor: pointer;
+}
 .reviews {
   display: flex;
   justify-content: center;
@@ -312,6 +316,7 @@ body {
 .reviews-text {
   font-size: 28px;
   color: #383131;
+  cursor: pointer;
 }
 .color-set {
   display: flex;
@@ -321,6 +326,7 @@ body {
 }
 .color-set-title {
   font-size: 28px;
+  margin-bottom: 10px;
 }
 .color-set-title span {
   font-size: 22px;
@@ -359,21 +365,25 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  max-width: 400px;
 }
 .info-item {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content:space-between;
   gap: 30px;
 }
 .info-item-type {
   font-size: 18px;
   color: #606060;
   white-space: nowrap;
+  text-align: left;
 }
 .info-item-object {
   font-size: 20px;
   text-align: left;
+  max-width: 90px;
+  width: 100%;
   color: #383131;
   white-space: nowrap;
 }
@@ -639,9 +649,15 @@ body {
   gap: 14px;
   flex: 1;
 }
+
 .fast-link {
   color: #b1b1b1;
   font-size: 28px;
+  transition: 0.3s ease;
+}
+.fast-link:hover,
+.contacts-link:hover {
+  color: var(--font-color);
 }
 .footer-logo-block {
   width: max-content;
@@ -681,6 +697,7 @@ body {
 .contacts-link {
   color: #b1b1b1;
   font-size: 28px;
+  transition: 0.3s ease;
 }
 .social-links {
   display: flex;

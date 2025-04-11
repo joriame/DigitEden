@@ -399,6 +399,10 @@ body {
 .fast-link {
   color: #b1b1b1;
   font-size: 28px;
+  transition: .3s ease;
+}
+.fast-link:hover, .contacts-link:hover{
+  color: var(--font-color);
 }
 .footer-logo-block {
   width: max-content;
@@ -438,6 +442,7 @@ body {
 .contacts-link {
   color: #b1b1b1;
   font-size: 28px;
+  transition: .3s ease;
 }
 .social-links {
   display: flex;
