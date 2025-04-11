@@ -1,0 +1,587 @@
+@font-face {
+  font-family: "Fira-Sans";
+  src: url(../fonts/FiraSans/FiraSans-Regular.ttf) format("truetype"),
+    url(../fonts/FiraSans/FiraSans-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Gentium";
+  src: url(../assets/fonts/Gentium/GentiumPlus-R.ttf) format("truetype"),
+    url(../assets/fonts/Gentium/GentiumPlus-R.woff2) format("woff2");
+}
+:root {
+  --font-color: #fff;
+  --blocks-bgcolor: #020718;
+  --orange-font-color: #ff0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+body {
+  background-color: #131c3b;
+  font-family: "Fira-Sans", sans-serif;
+}
+/* Стилизация шапки */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+}
+.header-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.header-tel-location-block {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.location-block {
+  display: flex;
+}
+.location-block {
+  cursor: pointer;
+}
+.location-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--font-color);
+  font-size: 20px;
+}
+.number-link {
+  color: var(--font-color);
+  font-size: 24px;
+  white-space: nowrap;
+}
+.header-main-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blocks-bgcolor);
+  width: 100%;
+  border-bottom: 1px solid var(--font-color);
+}
+.header-main-container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 10px;
+}
+.logo-block {
+  width: max-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.logo-text {
+  color: var(--font-color);
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 56px;
+  white-space: nowrap;
+  letter-spacing: 0;
+}
+.logo-text span {
+  color: var(--orange-font-color);
+  font-weight: bold;
+}
+
+.search-block {
+  max-width: 720px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 15px;
+}
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  height: 65px;
+  font-size: 32px;
+  padding-left: 20px;
+  padding-right: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.search-input::placeholder {
+  color: #383131;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.menu {
+  width: max-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  color: var(--font-color);
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/* Стилизация секциии регистрации */
+.reg-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: var(--blocks-bgcolor);
+  padding: 81px 10px;
+}
+.reg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  max-width: 800px;
+  min-width: 200px;
+  width: 100%;
+  max-height: 1000px;
+  border-radius: 10px;
+  padding: 40px 50px;
+}
+.reg-title {
+  color: var(--font-color);
+  font-size: 70px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #dfdfdf;
+  font-size: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  height: max-content;
+}
+.tel-input,
+.password-input {
+  width: 100%;
+  height: 55px;
+  border-radius: 8px;
+  border: 2px solid var(--orange-font-color);
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.captcha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+  height: max-content;
+  padding: 15px 15px;
+  border: 2px solid var(--font-color);
+  border-radius: 8px;
+  background: rgba(112, 112, 112, 0.2);
+}
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  border: 3px solid var(--orange-font-color);
+  border-radius: 8px;
+  background-color: transparent;
+  position: relative;
+  margin-right: 8px;
+  vertical-align: middle;
+  transition: all 0.2s;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-color: var(--orange-font-color);
+  border-color: var(--orange-font-color);
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 3px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  transform: rotate(45deg);
+}
+
+.captcha-text {
+  color: var(--font-color);
+  font-size: 20px;
+}
+.forgot-pass {
+  width: max-content;
+  color: var(--font-color);
+  font-size: 20px;
+}
+.forgot-pass:hover {
+  text-decoration: underline;
+}
+.btn-acc-create {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.create-acc {
+  color: var(--font-color);
+  font-size: 20px;
+}
+.create-acc a {
+  font-size: 20px;
+  color: var(--orange-font-color);
+}
+
+.send-btn {
+  max-width: 200px;
+  width: 100%;
+  height: 60px;
+  font-size: 25px;
+  text-transform: uppercase;
+  background-color: var(--orange-font-color);
+  color: var(--font-color);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.send-btn:hover {
+  background-color: #d60303;
+}
+.qr-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+.qr-text {
+  color: #b1b1b1;
+  font-size: 20px;
+}
+.qr-more {
+  color: var(--orange-font-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Стилизация футера */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  border-top: 1px solid var(--font-color);
+  box-shadow: 10px 10px 30px #fff;
+}
+.footer-container {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  padding: 50px 10px;
+}
+.fast-link-title {
+  font-size: 32px;
+  color: var(--font-color);
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.fast-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+.fast-link {
+  color: #b1b1b1;
+  font-size: 28px;
+}
+.footer-logo-block {
+  width: max-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  text-align: left;
+}
+.footer-logo-text {
+  color: var(--font-color);
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 56px;
+  white-space: nowrap;
+  letter-spacing: 0;
+}
+.footer-logo-text span {
+  color: var(--orange-font-color);
+  font-weight: bold;
+}
+.contacts-title {
+  font-size: 32px;
+  color: var(--font-color);
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.contacts-links {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 14px;
+  flex: 1;
+}
+.contacts-link {
+  color: #b1b1b1;
+  font-size: 28px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+.politic-text {
+  color: var(--font-color);
+  font-size: 28px;
+}
+/* Адаптив */
+
+@media screen and (max-width: 1024px) {
+  .header-main-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search-block {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .menu {
+    gap: 50px;
+    padding: 0;
+  }
+
+  .menu-link {
+    font-size: 14px;
+  }
+  .footer-logo-text {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reg-title {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .reg-container {
+    padding: 30px 20px;
+  }
+
+  .tel-input,
+  .password-input {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .captcha-text {
+    font-size: 16px;
+  }
+
+  .custom-checkbox .checkmark {
+    width: 30px;
+    height: 30px;
+  }
+
+  .send-btn {
+    max-width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+  .btn-acc-create {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .qr-text,
+  .create-acc,
+  .create-acc a {
+    font-size: 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-logo-block {
+    order: 1;
+  }
+
+  .fast-links {
+    order: 2;
+    margin-bottom: 30px;
+  }
+
+  .contacts-links {
+    align-items: start;
+    order: 3;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .politic-text {
+    text-align: center;
+    width: 100%;
+  }
+  .custom-checkbox input:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 1px;
+    width: 5px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-text {
+    font-size: 32px;
+  }
+  .location-text {
+    display: none;
+  }
+
+  .footer-logo-text {
+    font-size: 32px;
+  }
+
+  .fast-link,
+  .contacts-link {
+    font-size: 20px;
+  }
+
+  .fast-link-title,
+  .contacts-title {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+
+  .politic-text {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .search-input {
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .search-icon {
+    width: 24px;
+    right: 8px;
+  }
+
+  .menu-link img {
+    width: 24px;
+    height: 24px;
+  }
+  .number-link {
+    font-size: 20px;
+  }
+  .number-link {
+    font-size: 20px;
+  }
+}

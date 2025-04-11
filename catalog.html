@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="assets/styles/catalog.css">
+</head>
+
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-tel-location-block">
+        <div class="location-block">
+          <p class="location-text">Чебоксары </p>
+          <img src="assets/icons/location-icon.svg" alt="location-icon">
+        </div>
+        <a href="tel:+88354592228" class="number-link">8 835 459-22-28</a>
+      </div>
+
+      <div class="header-main-block">
+        <div class="header-main-container">
+          <div class="logo-block" onclick="window.location.href='index.html'">
+            <img src="assets/icons/logo.svg" alt="logo">
+            <h1 class="logo-text">digi<span>t</span> <span>e</span>den</h1>
+          </div>
+
+          <div class="search-block">
+            <div class="search-wrapper">
+              <input type="text" class="search-input" placeholder="Поиск по товарам">
+              <img class="search-icon" src="assets/icons/search-icon.svg" alt="search-icon">
+            </div>
+          </div>
+
+          <nav class="menu">
+            <a href="about.html" class="menu-link about">
+              <img src="assets/icons/about-icon.svg" alt="about-icon">
+              <span>О нас</span>
+            </a>
+            <a href="catalog.html" class="menu-link catalog">
+              <img src="assets/icons/catalog-icon.svg" alt="catalog-icon">
+              <span>Каталог</span>
+            </a>
+            <a href="auth.html" class="menu-link entrance">
+              <img src="assets/icons/entrance-icon.svg" alt="entrance-icon">
+              <span>Вход</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="products-head">
+      <div class="product-head-container">
+        <div class="product-type-container">
+          <div class="product-type-block" onclick="window.location.href='product-card.html'">
+            <img src="assets/icons/smartphone.svg" alt="Смартфон">
+            <h3 class="product-type-title">Смартфоны</h3>
+          </div>
+          <div class="product-type-block" onclick="window.location.href='product-card.html'">
+            <img src="assets/icons/laptop.svg" alt="Ноутбуки">
+            <h3 class="product-type-title">Ноутбуки</h3>
+          </div>
+          <div class="product-type-block" onclick="window.location.href='product-card.html'">
+            <img src="assets/icons/tv.svg" alt="Телевизоры">
+            <h3 class="product-type-title">Телевизоры</h3>
+          </div>
+          <div class="product-type-block" onclick="window.location.href='product-card.html'">
+            <img src="assets/icons/washing-machine.svg" alt="Бытовая техника">
+            <h3 class="product-type-title">Бытовая техника</h3>
+          </div>
+          <div class="product-type-block" onclick="window.location.href='product-card.html'">
+            <img src="assets/icons/pc.svg" alt="Составляющие ПК">
+            <h3 class="product-type-title">Составляющие ПК</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products-body">
+      <div class="products-container">
+        <h2 class="products-body-head">Каталог</h2>
+        <div class="products-body-container">
+          <div class="product-card">
+            <svg class="to-fav" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Смартфоны и гаджеты</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/smartphone-card.svg" alt="Гаджеты">
+          </div>
+
+          <div class="product-card">
+            <svg class="to-fav" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Умный дом</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/smart-home.svg" alt="Умный дом">
+          </div>
+
+          <div class="product-card">
+            <svg class="to-fav" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Бытовая техника</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/wash-machine.svg" alt="Бытовая техника">
+          </div>
+
+          <div class="product-card">
+            <svg class="to-fav" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Сетевое оборудование</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/net-set.svg" alt="Сетевое оборудование">
+          </div>
+
+          <div class="product-card">
+            <svg class="to-fav" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Автотовары</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/car-prod.svg" alt="Автотовары">
+          </div>
+
+          <div class="product-card">
+            <svg class="to-fav active" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Ноутбуки и ПК</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/laptop-card.svg" alt="Ноутбуки и ПК">
+          </div>
+
+          <div class="product-card">
+            <svg class="to-fav" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Телевизоры и аудио</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/tv-card.svg" alt="Телевизоры и аудио">
+          </div>
+
+          <div class="product-card">
+            <svg class="to-fav" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Офис и мебель</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/furniture.svg" alt="Офис и мебель">
+          </div>
+          <div class="product-card">
+            <svg class="to-fav" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Аксессуары</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/accessories.svg" alt="Аксессуары">
+          </div>
+          <div class="product-card">
+            <svg class="to-fav" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Здоровье и красота</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/beauty.svg" alt="Здоровье и красота">
+          </div>
+          <div class="product-card">
+            <svg class="to-fav" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Сад и дом</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/garden.svg" alt="Сад и дом">
+          </div>
+          <div class="product-card">
+            <svg class="to-fav" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.462 6.79975C25.6077 7.95012 26.251 9.50757 26.251 11.1311C26.251 12.7547 25.6077 14.3122 24.462 15.4625L15 25.0001L5.53801 15.4619C4.68694 14.6053 4.10748 13.5167 3.87217 12.3323C3.63687 11.1479 3.75617 9.92039 4.21516 8.80349C4.67414 7.68658 5.4524 6.72989 6.45251 6.05318C7.45261 5.37648 8.63012 5.00983 9.83761 4.99915C11.4521 5.0085 12.9976 5.65548 14.1372 6.79915C14.4699 7.1285 14.7597 7.49841 15 7.90015C15.2403 7.49862 15.5302 7.12892 15.8628 6.79975C16.4244 6.22966 17.0938 5.77695 17.832 5.46794C18.5702 5.15893 19.3625 4.9998 20.1627 4.9998C20.963 4.9998 21.7552 5.15893 22.4934 5.46794C23.2316 5.77695 23.9004 6.22966 24.462 6.79975Z"
+                stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width='1' />
+            </svg>
+            <div class="card-text-info" onclick="window.location.href='product-card.html'">
+              <h3 class="card-title">Фото и видео</h3>
+              <div class="count-and-reviews">
+                <p class="count-text"><span>3467</span> товаров</p>
+                <p class="reviews-text"><span>45874</span> отзывов</p>
+              </div>
+            </div>
+            <img class="card-img" src="assets/images/photo-video.svg" alt="Офис и мебель">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.querySelector('.products-body-container').addEventListener('click', function (e) {
+        const svg = e.target.closest('.to-fav');
+        if (svg) {
+          svg.classList.toggle('active');
+        }
+      });
+    </script>
+  </main>
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="fast-links">
+        <h3 class="fast-link-title">Ориентир</h3>
+        <a href="" class="fast-link">Главная</a>
+        <a href="" class="fast-link">О нас</a>
+        <a href="" class="fast-link">Личный кабинет</a>
+        <a href="" class="fast-link">Каталог</a>
+      </div>
+      <div class="footer-logo-block">
+        <img src="assets/icons/logo.svg" alt="logo">
+        <h1 class="footer-logo-text">digi<span>t</span> <span>e</span>den</h1>
+      </div>
+      <div class="contacts-links">
+        <h3 class="contacts-title">Контакты</h3>
+        <a href="tel:+88354592228" class="contacts-link">8 835 459-22-28</a>
+        <a href="" class="contacts-link">Обратная связь</a>
+        <div class="social-links">
+          <a href="https://web.telegram.org/a/" class="social-link"><img src="assets/icons/tg-icon.svg"
+              alt="Телеграмм"></a>
+          <a href="https://www.whatsapp.com/?lang=ru_RU&ysclid=m98uadqfcw54255465" class="social-link"><img
+              src="assets/icons/whatsapp-icon.svg" alt="Whatsapp"></a>
+          <a href="https://vk.com" class="social-link"><img src="assets/icons/vk-icon.svg" alt="VK"></a>
+        </div>
+      </div>
+    </div>
+    <p class="politic-text">Политика конфиденциальности 2025</p>
+  </footer>
+</body>
+
+</html>
