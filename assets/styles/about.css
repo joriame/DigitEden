@@ -156,7 +156,7 @@ body {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .menu {
@@ -177,7 +177,10 @@ body {
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: nowrap; transition: .3s ease;
+}
+.menu-link:hover{
+  color: var(--orange-font-color);
 }
 
 /* Стилизация блока о компании */
@@ -203,7 +206,7 @@ body {
 .advantages-title {
   font-size: 60px;
   color: var(--font-color);
-  font-family: "Gentium";
+  font-family: "Gentium",serif;
   margin-bottom: 18px;
 }
 

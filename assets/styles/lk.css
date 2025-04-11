@@ -156,7 +156,7 @@ body {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .menu {
@@ -178,6 +178,10 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   white-space: nowrap;
+  transition: 0.3s ease;
+}
+.menu-link:hover {
+  color: var(--orange-font-color);
 }
 /* Стилизация личного кабинета */
 .lk {
@@ -324,12 +328,11 @@ body {
   border-radius: 20px;
   margin-top: 25px;
   cursor: pointer;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-.delete-acc:hover{
+.delete-acc:hover {
   background-color: #cb0404;
 }
-
 
 /* Адаптивность */
 @media (max-width: 1200px) {
@@ -337,7 +340,8 @@ body {
     flex-direction: column;
     gap: 30px;
   }
-  .lk-menu, .lk-menu-right {
+  .lk-menu,
+  .lk-menu-right {
     width: 100%;
     margin-left: 0;
   }
@@ -358,7 +362,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
-  .profile-title, .profile-desc, .block-title {
+  .profile-title,
+  .profile-desc,
+  .block-title {
     font-size: 24px;
   }
   .edit-btn {
@@ -367,7 +373,9 @@ body {
     width: 100%;
     text-align: center;
   }
-  .adress, .person, .push {
+  .adress,
+  .person,
+  .push {
     flex-direction: column;
     gap: 15px;
     padding: 15px;
@@ -382,12 +390,12 @@ body {
   .lk {
     padding: 20px 0;
   }
-  .profile-title, .block-title {
+  .profile-title,
+  .block-title {
     font-size: 22px;
   }
-  .profile-desc{
+  .profile-desc {
     font-size: 16px;
-
   }
   .lk-btn {
     font-size: 22px;
@@ -651,10 +659,10 @@ body {
   .menu-link:hover {
     color: inherit;
   }
-  .edit-btn:hover{
+  .edit-btn:hover {
     color: inherit;
   }
-  .delete-acc:hover{
+  .delete-acc:hover {
     color: inherit;
   }
 }

@@ -156,7 +156,7 @@ body {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .menu {
@@ -178,6 +178,10 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   white-space: nowrap;
+  transition: .3s ease;
+}
+.menu-link:hover{
+  color: var(--orange-font-color);
 }
 
 /* Стилизация слайдера */
